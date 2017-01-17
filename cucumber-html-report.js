@@ -1,7 +1,6 @@
 var
   fs = require("fs"),
   path = require("path"),
-  slug = require("slug"),
   atob = require("atob"),
   Mustache = require("mustache"),
   Directory = require("./lib/directory.js"),
@@ -314,7 +313,7 @@ function loadTemplate(templateFile) {
 }
 
 function createFileName(name) {
-  return slug(name, "_");
+  return encodeURIComponent(name);
 }
 
 function saveHTML(targetDirectory, reportName, html) {
