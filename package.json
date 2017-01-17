@@ -1,6 +1,6 @@
 {
   "name": "cucumber-html-report-no-unicode",
-  "version": "0.4.5",
+  "version": "0.4.4",
   "description": "Convert cucumber reports from json to HTML using Mustache templates - without a unicode dependency",
   "homepage": "https://github.com/leinonen/cucumber-html-report",
   "author": {
@@ -16,16 +16,6 @@
     "url": "https://github.com/Kauabunga/cucumber-html-report/issues"
   },
   "main": "index.js",
-  "scripts": {
-    "unit": "./node_modules/.bin/mocha --reporter spec",
-    "cucumber": "./node_modules/.bin/cucumber.js features",
-    "cucumber-win": "./node_modules/.bin/cucumber-js features",
-    "report": "./node_modules/.bin/cucumber.js features -f json:cucumber_report.json",
-    "report-win": "./node_modules/.bin/cucumber-js features -f json:cucumber_report.json",
-    "test": "npm run cucumber",
-    "test-win": "npm run cucumber-win",
-    "build": " ./node_modules/.bin/webpack --display-error-details --optimize-minimize"
-  },
   "keywords": [
     "cucumber",
     "json2html",
@@ -34,12 +24,8 @@
   "license": "MIT",
   "dependencies": {
     "atob": "^2.0.3",
-    "d3": "^3.5.5",
-    "object-assign": "^4.1.0",
-    "mustache": "^2.2.1",
-    "ramda": "^0.21.0",
-    "replace": "^0.3.0",
-    "webpack": "^1.13.1"
+    "mustache": "^2.2.0",
+    "object-assign": "^4.1.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
