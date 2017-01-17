@@ -86,7 +86,7 @@ function loadTemplate(templateFile) {
 }
 
 function createFileName(name) {
-  return encodeURIComponent(name);
+  return encodeURIComponent(name.replace(/\s/g, '').replace(/\W+/g, '').toLowerCase().trim());
 }
 
 function saveHTML(targetDirectory, reportName, html) {
